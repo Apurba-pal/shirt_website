@@ -11,10 +11,10 @@ const FilePicker = ({file,setFile, readfile}) => {
         onChange={(e)=>setFile(e.target.files[0])}
         />
         <label htmlFor='file-upload' className='filepicker-label'>
-          upload file
+          upload image
         </label>
-        <p className='mt-2 text-gray-500 text-xs truncate'>
-          {file? file.name : 'No file selected'}
+        <p className='mt-2 text-black text-xs truncate'>
+          {file? file.name : 'No image selected'}
         </p>
       </div>
       <div className='mt-4 flex flex-wrap gap-3'>
