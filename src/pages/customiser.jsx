@@ -125,8 +125,9 @@ const Customiser = () => {
                     key={tab.name}
                     tab={tab}
                     handleClick={() => {
-                      setActiveEditortab(tab.name);
-                    }}
+  setActiveEditortab((prev) => (prev === tab.name ? "" : tab.name));
+}}
+
                   />
                 ))}
                 {generateTabContent()}
